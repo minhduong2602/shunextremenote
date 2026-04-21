@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+*.excalidraw
 
 # debug
 npm-debug.log*
