@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth/react";
 import dbConnect from "@/lib/mongoose";
 import Board from "@/models/Board";
 
