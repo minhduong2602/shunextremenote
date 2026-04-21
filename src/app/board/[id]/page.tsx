@@ -5,7 +5,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import BoardEditorWrapper from "@/components/BoardEditorWrapper";
 
-export default async function BoardPage({ params }: { params: { id: string } }) {
+export default async function BoardPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const session = await getServerSession(authOptions);
   
